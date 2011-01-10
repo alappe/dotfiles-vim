@@ -5,6 +5,10 @@ set autoindent
 set noerrorbells
 set backspace=indent,eol,start
 set magic
+
+" Pathogen:
+call pathogen#runtime_append_all_bundles() 
+
 filetype plugin indent on
 syntax enable " :
 
@@ -73,6 +77,9 @@ source $VIMRUNTIME/macros/matchit.vim
 
 " xmledit (xml.vim)
 let xml_use_xhtml = 1
+
+" Gundo history tree:
+nnoremap <C-h> :GundoToggle<CR>
 
 
 finish
