@@ -7,6 +7,7 @@ set backspace=indent,eol,start
 set magic
 
 " Pathogen:
+call pathogen#helptags()
 call pathogen#runtime_append_all_bundles() 
 
 filetype plugin indent on
@@ -44,6 +45,7 @@ autocmd FileType make set tw=0
 autocmd FileType awk set tw=0
 autocmd FileType dot set tw=0
 autocmd FileType xml set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab textwidth=0 number
+autocmd FileType javascript set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab textwidth=0 number
 au FileType html set tw=0 nu
 au FileType xhtml set tw=0 nu
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
