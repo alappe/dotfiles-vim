@@ -72,6 +72,12 @@ if has("gui_running")
     map <D-n> :tabNext<CR>
     map <D-A-n> :tabNext<CR>
     set gfn=DejaVu\ Sans\ Mono:h14
+
+    " solarized for gui…
+    colo solarized
+
+    " Hide the toolbar:
+    set go-=T
 endif
 
 " matchit
