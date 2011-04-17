@@ -25,6 +25,8 @@ set history=50
 set ruler
 set incsearch 
 
+set wildmode=longest,list,full
+
 " replace tab with 4 spaces
 " set tabstop=4
 " set shiftwidth=4
