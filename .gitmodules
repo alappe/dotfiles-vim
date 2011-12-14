@@ -28,3 +28,6 @@
 [submodule "bundle/keepcase"]
 	path = bundle/keepcase
 	url = git://github.com/vim-scripts/keepcase.vim.git
+[submodule "bundle/ack.vim"]
+	path = bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim
