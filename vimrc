@@ -48,6 +48,7 @@ autocmd FileType awk set tw=0
 autocmd FileType dot set tw=0
 autocmd FileType xml set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab textwidth=0 number
 autocmd FileType javascript set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab textwidth=0 number
+autocmd FileType coffee set tabstop=2 shiftwidth=2 number expandtab
 au FileType html set tw=0 nu
 au FileType xhtml set tw=0 nu
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
@@ -91,5 +92,12 @@ let xml_use_xhtml = 1
 " Gundo history tree:
 nnoremap <C-h> :GundoToggle<CR>
 
+" Gist
+let g:github_user  = 'crazynd'
+let g:github_token = '38c1442d89ccb4826e3ba80fd17c1838'
+let g:gist_clip_command = 'pbcopy'
+
+" ctags
+set tags=tags;$HOME
 
 finish
