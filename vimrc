@@ -21,7 +21,6 @@ colo desert
 set textwidth=72
 set showcmd
 set history=50
-set ruler
 set incsearch 
 
 set wildmode=longest,list,full
@@ -100,5 +99,9 @@ let g:gist_clip_command = 'pbcopy'
 
 " ctags
 set tags=tags;$HOME
+
+" Extended statusline using fugitive to show git branch:
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+set ruler
 
 finish
