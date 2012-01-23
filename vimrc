@@ -50,6 +50,7 @@ autocmd FileType xml set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab textwi
 autocmd FileType javascript set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab textwidth=0 number
 autocmd FileType coffee set tabstop=2 shiftwidth=2 number expandtab
 autocmd FileType scss set softtabstop=2 shiftwidth=2 noexpandtab number
+autocmd FileType yaml set softtabstop=2 shiftwidth=2 noexpandtab number
 au FileType html set tw=0 nu
 au FileType xhtml set tw=0 nu
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
