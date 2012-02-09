@@ -57,7 +57,11 @@ autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
 " map :Tlist (taglist) to F8
 map <C-N> :NERDTree<cr>
-map <C-M> :TlistToggle<cr>
+
+" Taglist
+" map <C-M> :TlistToggle<cr>
+" let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
+nmap <CR> :TagbarToggle<CR>
 
 " better font for me:
 " set gfn=Courier:h14
@@ -105,5 +109,20 @@ set tags=tags;$HOME
 " Extended statusline using fugitive to show git branch:
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set ruler
+
+" CoffeeTags
+let g:tagbar_type_coffee = {
+ \ 'kinds' : [
+ \   'f:functions',
+ \   'o:object'
+ \ ],
+ \ 'kind2scope' : {
+ \  'f' : 'object',
+ \   'o' : 'object'
+ \},
+ \ 'sro' : ".",
+ \ 'ctagsbin' : 'coffeetags',
+ \ 'ctagsargs' : '--include-vars ',
+ \}
 
 finish
