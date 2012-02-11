@@ -43,3 +43,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
+[submodule "bundle/indent-guides"]
+	path = bundle/indent-guides
+	url = git://github.com/nathanaelkane/vim-indent-guides.git
