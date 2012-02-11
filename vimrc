@@ -48,11 +48,12 @@ autocmd FileType dot set tw=0
 autocmd FileType xml set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab textwidth=0 number
 autocmd FileType javascript set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab textwidth=0 number
 autocmd FileType coffee set tabstop=2 shiftwidth=2 number expandtab
-autocmd FileType scss set softtabstop=2 shiftwidth=2 noexpandtab number
+autocmd FileType scss set softtabstop=4 shiftwidth=4 noexpandtab number
 autocmd FileType yaml set softtabstop=2 shiftwidth=2 expandtab number
-au FileType html set tw=0 nu
-au FileType xhtml set tw=0 nu
-au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
+autocmd FileType typoscript set textwidth=0 number
+autocmd FileType html set tw=0 number
+autocmd FileType xhtml set tw=0 number
+autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
 " map :Tlist (taglist) to F8
 map <C-N> :NERDTree<cr>
