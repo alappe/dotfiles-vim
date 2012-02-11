@@ -60,7 +60,8 @@ map <C-N> :NERDTree<cr>
 
 " Taglist
 " map <C-M> :TlistToggle<cr>
-" let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
+let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
+let g:tagbar_ctags_bin = "/usr/local/bin/ctags"
 nmap <CR> :TagbarToggle<CR>
 
 " better font for me:
