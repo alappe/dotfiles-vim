@@ -107,6 +107,9 @@ let g:gist_clip_command = 'pbcopy'
 " ctags
 set tags=tags;$HOME
 
+" Keep some lines on top before scrolling:
+set scrolloff=5
+
 " Extended statusline using fugitive to show git branch:
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set ruler
