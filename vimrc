@@ -14,6 +14,10 @@ syntax enable " :
 
 set shellslash
 
+" One Backupdir for all files…
+set backupdir=~/.vim/tmp,.
+set directory=~/.vim/tmp,.,/tmp
+
 " colo ps_color
 " colo zenburn
 colo desert
