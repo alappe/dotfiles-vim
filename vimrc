@@ -64,6 +64,9 @@ map <C-N> :NERDTree<cr>
 
 " Taglist
 " map <C-M> :TlistToggle<cr>
+
+" ctags
+set tags=tags;$HOME
 let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
 let g:tagbar_ctags_bin = "/usr/local/bin/ctags"
 nmap <CR> :TagbarToggle<CR>
@@ -108,9 +111,6 @@ let g:github_user  = 'crazynd'
 let g:github_token = '38c1442d89ccb4826e3ba80fd17c1838'
 let g:gist_clip_command = 'pbcopy'
 
-" ctags
-set tags=tags;$HOME
-
 " Keep some lines on top before scrolling:
 set scrolloff=5
 
@@ -132,5 +132,15 @@ let g:tagbar_type_coffee = {
  \ 'ctagsbin' : 'coffeetags',
  \ 'ctagsargs' : '--include-vars ',
  \}
+
+" Education, the hard way:
+noremap <Up> ""
+noremap! <Up> <Esc>
+noremap <Down> ""
+noremap! <Down> <Esc>
+noremap <Left> ""
+noremap! <Left> <Esc>
+noremap <Right> ""
+noremap! <Right> <Esc>
 
 finish
