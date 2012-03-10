@@ -107,8 +107,6 @@ let xml_use_xhtml = 1
 nnoremap <C-h> :GundoToggle<CR>
 
 " Gist
-let g:github_user  = 'crazynd'
-let g:github_token = '38c1442d89ccb4826e3ba80fd17c1838'
 let g:gist_clip_command = 'pbcopy'
 
 " Keep some lines on top before scrolling:
