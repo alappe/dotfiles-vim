@@ -157,13 +157,13 @@ let g:tagbar_type_coffee = {
  \}
 
 " Education, the hard way:
-noremap <Up> ""
-noremap! <Up> <Esc>
-noremap <Down> ""
-noremap! <Down> <Esc>
-noremap <Left> ""
-noremap! <Left> <Esc>
-noremap <Right> ""
-noremap! <Right> <Esc>
+" noremap <Up> ""
+" noremap! <Up> <Esc>
+" noremap <Down> ""
+" noremap! <Down> <Esc>
+" noremap <Left> ""
+" noremap! <Left> <Esc>
+" noremap <Right> ""
+" noremap! <Right> <Esc>
 
 finish
