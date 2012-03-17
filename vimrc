@@ -124,6 +124,23 @@ set ruler
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_working_path_mode = 2
 
+" Syntastic
+let g:syntastic_enable_signs=1
+let g:syntastic_mode_map = { 'mode': 'active',
+      \ 'active_filetypes': [
+          \ 'ruby', 
+          \ 'php',
+          \ 'coffee',
+          \ 'javascript',
+          \ 'json',
+          \ 'scss'
+      \ ],
+      \ 'passive_filetypes': [
+          \ 'puppet',
+          \ 'sh'
+        \ ]
+  \ }
+
 " CoffeeTags
 let g:tagbar_type_coffee = {
  \ 'kinds' : [
