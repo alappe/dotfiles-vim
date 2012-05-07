@@ -41,6 +41,7 @@ set encoding=utf-8
 
 autocmd FileType mail set tw=72 sw=4 tabstop=4 expandtab spell nu
 autocmd FileType ruby set tw=72 sw=2 tabstop=2 expandtab spell nu
+autocmd FileType jade set tw=0 sw=2 tabstop=2 expandtab spell nu
 autocmd FileType text set tw=72 sw=4 tabstop=4 expandtab spell
 autocmd FileType php set binary noeol tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab textwidth=0 number
 "ts=4  sw=4 sts=4 noet nu tw=0
