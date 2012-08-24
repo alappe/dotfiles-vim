@@ -1,5 +1,3 @@
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
 set nocompatible
 set autoindent
 set noerrorbells
@@ -18,8 +16,6 @@ set shellslash
 set backupdir=~/.vim/tmp,.
 set directory=~/.vim/tmp,.,/tmp
 
-" colo ps_color
-" colo zenburn
 colo desert
 
 set textwidth=72
@@ -44,7 +40,6 @@ autocmd FileType ruby set tw=72 sw=2 tabstop=2 expandtab spell nu
 autocmd FileType jade set tw=0 sw=2 tabstop=2 expandtab spell nu
 autocmd FileType text set tw=72 sw=4 tabstop=4 expandtab spell
 autocmd FileType php set binary noeol tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab textwidth=0 number
-"ts=4  sw=4 sts=4 noet nu tw=0
 autocmd FileType tex  set tw=80 nu tabstop=4 sw=4 expandtab nu spell 
 autocmd FileType cpp set tw=0 cindent nu sw=4
 autocmd FileType make set tw=0
@@ -60,21 +55,13 @@ autocmd FileType html set tw=0 number
 autocmd FileType xhtml set tw=0 number
 autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
-" map :Tlist (taglist) to F8
 map <C-N> :NERDTree<cr>
-
-" Taglist
-" map <C-M> :TlistToggle<cr>
 
 " ctags
 set tags=tags;$HOME
 let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
 let g:tagbar_ctags_bin = "/usr/local/bin/ctags"
 nmap <CR> :TagbarToggle<CR>
-
-" better font for me:
-" set gfn=Courier:h14
-set gfn=DejaVu\ Sans\ Mono:h14
 
 if has("gui_running")
     " Let's try it... exclusively on vim7x
@@ -83,6 +70,9 @@ if has("gui_running")
     " Imitate OS X applications:
     map <D-w> :q<CR>
     map <D-s> :w<CR>
+
+    " better font for me:
+    set gfn=DejaVu\ Sans\ Mono:h14
 
     " Some more...
     map <D-t> :tabnew<CR>
@@ -156,15 +146,5 @@ let g:tagbar_type_coffee = {
  \ 'ctagsbin' : 'coffeetags',
  \ 'ctagsargs' : '--include-vars ',
  \}
-
-" Education, the hard way:
-" noremap <Up> ""
-" noremap! <Up> <Esc>
-" noremap <Down> ""
-" noremap! <Down> <Esc>
-" noremap <Left> ""
-" noremap! <Left> <Esc>
-" noremap <Right> ""
-" noremap! <Right> <Esc>
 
 finish
