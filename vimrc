@@ -65,20 +65,17 @@ nmap <CR> :TagbarToggle<CR>
 
 if has("gui_running")
     " Let's try it... exclusively on vim7x
-    set spell
-    set spelllang=de_19,en "Alte Rechtschreibung
     " Imitate OS X applications:
     map <D-w> :q<CR>
     map <D-s> :w<CR>
-
-    " better font for me:
-    set gfn=DejaVu\ Sans\ Mono:h14
 
     " Some more...
     map <D-t> :tabnew<CR>
     "map <D-w> :tabclose<CR>
     map <D-n> :tabNext<CR>
     map <D-A-n> :tabNext<CR>
+
+    " better font for me:
     set gfn=DejaVu\ Sans\ Mono:h14
 
     " solarized for gui…
@@ -86,6 +83,8 @@ if has("gui_running")
 
     " Hide the toolbar:
     set go-=T
+
+    echo "yes, we have a GUI"
 endif
 
 " matchit
