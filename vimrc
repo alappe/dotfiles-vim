@@ -98,7 +98,8 @@ nnoremap <C-h> :GundoToggle<CR>
 
 " Gist
 let g:gist_clip_command = 'pbcopy'
-let g:gist_use_password_in_gitconfig = 1
+let g:gist_use_password_in_gitconfig = 0
+let g:gist_open_browser_after_post = 1
 
 " Keep some lines on top before scrolling:
 set scrolloff=5
