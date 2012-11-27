@@ -1,0 +1,22 @@
+/**
+ * @test
+ */
+public function set${1:VarName}For${2:Type}Sets$1() {
+	$this->fixture->set$1(${4:Input});
+
+	$this->assertSame(
+		$4,
+		$this->fixture->get$1()
+	);
+}
+
+/**
+ * @test
+ */
+public function get$1ReturnsInitialValue() {
+	$this->assertSame(
+		${3:ReturnType},
+		$this->fixture->get$1()
+	);
+}
+
