@@ -7,7 +7,8 @@ set magic
 " Pathogen:
 call pathogen#infect()
 
-filetype plugin indent on
+filetype plugin on
+filetype indent on
 syntax enable " :
 
 set shellslash
